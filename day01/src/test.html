@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .div-top{
+            background: aqua;
+            width: 400px;
+            height: 100px;
+        }
+        .div-left{
+            background: forestgreen;
+            width: 100px;
+            height: 200px;
+            float: left;
+        }
+        .div-main{
+            background: red;
+            width: 400px;
+            height: 100px;
+        }
+        .div-bottom{
+            background: antiquewhite;
+            width: 400px;
+            height: 100px;
+        }
+        .clear-float{
+            float:none;
+        }
+
+        .div-father{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="div-father">
+    <div class="div-top">top</div>
+    <div class="div-left">left</div>
+    <div class="div-main">main</div>
+    <div class="div-bottom">bottom</div>
+    <div class="clear-float"></div>
+</div>
+
+
+</body>
+</html>

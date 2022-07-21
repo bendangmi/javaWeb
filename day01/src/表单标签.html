@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+<form action="https://www.bdmcom.cn" method="post">
+    <label for="nickName"> 昵称：
+        <input type="text" name="nickName" id="nickName">
+    </label>
+    <br/>
+    <label for="pwd"> 密码：
+        <input type="password" name="pwd" id="pwd">
+    </label>
+    <br/>
+    <label> 性别：
+        <input type="radio" name="gender" value="男" checked>男
+        <input type="radio" name="gender" value="女" >女
+    </label>
+    <br/>
+    <label> 爱好：
+        <input type="checkbox" name="hobby" value="basketball">篮球
+        <input type="checkbox" name="hobby" value="basketball">足球
+        <input type="checkbox" name="hobby" value="basketball">排球
+    </label>
+    <br/>
+    <label for="">星座：
+        <select name="star" id="">
+            <option value="1">巨蟹座</option>
+            <option value="2" selected>天蝎座</option>
+            <option value="3">白羊座</option>
+            <option value="4">金牛座</option>
+        </select>
+    </label>
+    <br/>
+    <label> 备注：
+        <textarea name="remark"  cols="30" rows="10"></textarea>
+    </label>
+    <br/>
+    <label>
+        <input type="submit" name="" value="注册">
+        <input type="submit" name="" value="登录">
+        <input type="reset" value="重置">
+    </label>
+</form>
+
+</body>
+</html>
+
+<!--
+  input type="text" 表示文本框，其中name属性必须要指定，否则这个文本框的数据将来是不会发送给服务器的
+  input type="password" 表示密码框
+  input type="radio" 表示单选按钮。需要注意的是，name属性值需要报纸一致，这样才会有互斥的效果；可以通过checked属性设置默认选中的项
+  input type="checkbox" 表示复选框。name属性值建议保持一致，这样将来我们服务器获取值的时候是一个数组
+  select 表示下拉列表。每个选项是 option,其中value属性是发送给服务器的值，selected表示默认选中的值
+  textarea 表示多行文本框（或称为文本域），它的value值就是开始标签之间的内容
+  input type="submit" 表示提交按钮
+  input type="reset" 表示重置按钮
+  input type="button" 表示普通按钮
+ 
+ -->
