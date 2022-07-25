@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="brand" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ajax-demo" target="1.7" />
+      <module name="brand-demo" target="1.8" />
+      <module name="cookieDemo" target="1.7" />
+      <module name="maven-deom" target="1.8" />
+      <module name="maven-project" target="1.8" />
+      <module name="mybatis-demo" target="1.8" />
+      <module name="mybatis-demo (1)" target="1.8" />
+      <module name="TomcatMaven" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="TomcatMaven" options="" />
+      <module name="ajax-demo" options="" />
+      <module name="brand" options="" />
+      <module name="brand-demo" options="" />
+      <module name="cookieDemo" options="" />
+      <module name="maven-deom" options="" />
+      <module name="maven-project" options="" />
+      <module name="mybatis-demo" options="" />
+      <module name="mybatis-demo (1)" options="" />
+    </option>
   </component>
 </project>
